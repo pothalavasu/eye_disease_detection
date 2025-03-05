@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(188, 209, 187);
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgreen;
+            /* padding: 15px;  */
+            font-size: 20px;
+            font-weight: bold;
+            align-items: center;
+            color: black;
+            /* width: 90vw; */
+            
+        }
+        .image-container {
+            margin-top: 30px;
+        }
+        .image-container img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .output-container {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .btn {
+            margin-top: 80px;
+            margin-left: -40px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            position:absolute;
+            
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>LIVEDOC</div>
+        <div><h1 style="margin-left: 200px;">Prediction Output</h1></div>
+        <div>About Us | Help | Contact |  <a style="text-decoration: none ;color:black;" href="/inp">Predict</a></div>
+    </div>
+
+   
+
+    <div class="image-container">
+        <img src="https://thumbs.dreamstime.com/b/young-beautiful-female-doctor-smiling-consulting-her-patient-physician-work-medicine-healthcare-concept-124160547.jpg" alt="Doctor and Patient">
+    </div>
+
+    <div class="output-container">
+       <h2> Predicted Disease is <span id="prediction-result"><strong style="color:green"><i>{{prediction}}</i></strong></span></h2>
+    </div>
+
+   <a href="/" class="btn">Go Back</a></button>
+
+
+
+</body>
+</html>

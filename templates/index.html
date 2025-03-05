@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Detection - LIVEDOC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left Section (Light Green Background) */
+        .left-section {
+            width: 50%;
+            background: #d4f8d4; /* Light Green */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            padding-left: 100px;
+        }
+
+        .left-section h1 {
+            font-size: 40px;
+            /* font-weight: bold; */
+            /* margin-bottom: 10px; */
+            font-weight: 100;
+        }
+        .left-section a{
+            border-radius: 50px;
+        }
+
+       
+
+        .appointment-btn {
+            padding: 15px 25px;
+            font-size: 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .appointment-btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Right Section (Background Image) */
+        .right-section {
+            width: 50%;
+            height: 100%;
+            /* background: url('https://thinkingabouthealth.com/wp-content/uploads/2019/11/Untitled-2-1001x642.jpgo-optical-eye-exam.jpg'); */
+        }
+        .right-section img{
+            width: 60vw;
+            height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(101, 234, 159, 0.8);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #007BFF;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">LIVEDOC</div>
+        <div class="nav">
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <a href="/inp">Predict</a>
+        </div>
+    </div>
+
+    <!-- Left Section -->
+    <div class="left-section">
+        <h1>We're <b>determined</b> for </h1><br>
+        <h1>your <b>better life</h1><br>
+        <h5>You can get the care you need 24/7 - be it online or in</h5><br>
+        <h5>person.You will be treated by caring specialist doctors.</h5><br>
+        <a href="/inp" class="appointment-btn">Make an Appointment</a>
+    </div>
+
+    <!-- Right Section (Background Image) -->
+    <div class="right-section">
+        <img src="https://thinkingabouthealth.com/wp-content/uploads/2019/11/Untitled-2-1001x642.jpg" alt="Eye Exam">
+    </div>
+
+</body>
+</html>

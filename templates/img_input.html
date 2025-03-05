@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image - LIVEDOC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .header {
+            background-color: lightgreen;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 10vh;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            flex: 1;
+            text-align: left;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            flex: 2;
+            text-align: center;
+        }
+        .nav {
+            flex: 1;
+            text-align: right;
+        }
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            display:flex;
+            align-items: center;
+            justify-content:left;
+            height: 100vh;
+            padding: 0px;
+        }
+        .image-container img {
+            width: 60vw; /* Increased size */
+            height: 100vh;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .form-container {
+            margin-left: 50px;
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .file-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #007BFF;
+            border-radius: 20px;
+            cursor: pointer;
+            background: white;
+            transition: 0.3s;
+        }
+        .file-input:hover {
+            background: #eef4ff;
+        }
+        .btn {
+            margin-top: 15px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 25px; /* Curved buttons */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>LIVEDOC</h1>
+        <h1 style="font-size:40px;"><b>Predict Disease</b></h1>
+        <div class="nav">
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://thumbs.dreamstime.com/z/eye-doctor-patient-writing-medical-recipe-standing-cabinet-happy-female-81963708.jpg">
+        </div>
+
+        <div class="form-container">
+            <h3><b>Please Upload the Image</b></h3>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" class="file-input" required>
+                <br>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
